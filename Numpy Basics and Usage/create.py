@@ -72,3 +72,7 @@ print("Matrix of different elements: \n", arr16)
 #3D array
 arr17 = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
 print("3D array: \n", arr17)    
+
+#Array from a generator
+arr18 = np.fromiter(range(5), dtype=int)
+print("Array from a generator: ", arr18)
