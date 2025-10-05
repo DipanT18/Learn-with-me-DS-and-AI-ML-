@@ -68,3 +68,7 @@ print("Structured array: \n", arr15)
 #Matrix of different elements
 arr16 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 print("Matrix of different elements: \n", arr16)
+
+#3D array
+arr17 = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+print("3D array: \n", arr17)    
