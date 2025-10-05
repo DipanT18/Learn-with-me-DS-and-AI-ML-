@@ -36,3 +36,7 @@ print("Lowest Science Marks:", lowest_Science_marks)
 lowest_among_both = np.min(np.concatenate((maths_marks, science_marks)))
 print("Lowest Marks among both subjects:", lowest_among_both)
 
+#Finding the top student based on total marks
+total_marks = maths_marks + science_marks
+top_student_index = np.argmax(total_marks)
+print("Top Student:", names_of_students[top_student_index])
