@@ -76,3 +76,7 @@ print("3D array: \n", arr17)
 #Array from a generator
 arr18 = np.fromiter(range(5), dtype=int)
 print("Array from a generator: ", arr18)
+
+#Array of complex numbers
+arr19 = np.array([1+2j, 3+4j, 5+6j])
+print("Array of complex numbers: ", arr19)
