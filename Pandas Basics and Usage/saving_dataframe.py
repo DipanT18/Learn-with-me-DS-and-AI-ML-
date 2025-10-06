@@ -34,3 +34,26 @@ try:
     print("DataFrame saved to data.json")
 except ImportError:
     print("json is not installed. DataFrame not saved to JSON.")
+
+#Now reading the data
+print("-" * 50)
+print("Reading the saved files back into DataFrames...")    
+print("-" * 50)
+
+# Read DataFrame from CSV
+df_csv = pd.read_csv('data.csv')
+print("DataFrame read from data.csv:\n", df_csv)
+
+# Read DataFrame from Excel
+try:
+    df_excel = pd.read_excel('data.xlsx')
+    print("DataFrame read from data.xlsx:\n", df_excel)
+except ImportError:
+    print("openpyxl is not installed. DataFrame not read from Excel.")
+
+# Read DataFrame from JSON
+try:
+    df_json = pd.read_json('data.json', orient='records', lines=True)
+    print("DataFrame read from data.json:\n", df_json)
+except ImportError:
+    print("json is not installed. DataFrame not read from JSON.")
